@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑器v1.0</title>
+		<meta name="360-site-verification" content="3c7fb82732f45b9abf88948d01e773a0" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="applicable-device" content="pc">
+	    <meta http-equiv="Cache-Control" content="no-transform" />
+	    <meta http-equiv="Cache-Control" content="no-siteapp" />
+	    <meta name="renderer" content="webkit">
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<form action="" method="post">
+			<div class="box-editor">
+				<div class="addcover-bottom">
+		    		<div class="addcover-text" addval=""><i class="iconfont addcover-text-icon">&#xe6b9;</i>添加文字</div>
+		    		<div class="addcover-picture" addval="">
+		    			<input type="file" name="headpic[]" class="file-input-one" id="file-input-one">
+		                <input type="hidden" id="imgUrl_1" class="imgUrl" name="pics[]" value="">
+		    			<i class="addcover-picture-icon iconfont">&#xe6a8;</i>添加图片
+		    		</div>
+		    	</div>
+		    	<canvas id="canvas" style="display:none;"></canvas>
+	    	</div>
+    	</form>
+	</body>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/exif_v2.js"></script>
+	<script src="js/editor.js"></script>
+	<script>
+		var editor = new Editor();
+	</script>
+</html>
